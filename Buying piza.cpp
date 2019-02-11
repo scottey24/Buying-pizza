@@ -1,3 +1,13 @@
+#include <iostream>
+using namespace std;
+
+double unitPrice (int diameter, double price);
+// Return the price per square inch of a pizza. The formal
+// parameter named diameter is the diameter of the pizza in inches.
+// The formal parameter named price is the price of the pizza.
+
+
+
 int main()
 {
 	int unitPriceSmall, unitPriceSmall;
