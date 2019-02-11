@@ -8,7 +8,7 @@ double unitPrice (int diameter, double price);
 
 
 
-int main()
+int main( )
 {
 	int unitPriceSmall, unitPriceSmall;
 	double unitPriceSmall, unitPriceSmall,
@@ -21,7 +21,7 @@ int main()
 	cin >> priceSmall;
 	cout << " Enter diameter of a large pizza (in inches): ";
 	cin >> diameterLarge;
-	cout << " Enter the price os a large pizza: $";
+	cout << " Enter the price of a large pizza: $";
 	cin >> priceLarge;
 	
 	unitPriceSmall = unitPrice(diameterSmall, priceSmall);
@@ -46,3 +46,14 @@ int main()
 	cout << "Buon appetito! \n";
 	return 0;
 	}
+	
+	double unitPrice(int diameter, double price)
+	{
+			const double PI = 3.14159;
+			double radius, area;
+			
+			radius = diameter/static_cast<double>(2);
+			area = PI * radius * radius;
+			return (price/area);
+	}
+			
